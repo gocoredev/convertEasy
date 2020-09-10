@@ -23,6 +23,11 @@ For ES6:
 import {convertMoney} from 'converteasy'
 ```
 
+For lower JS:
+```js
+const {convertMoney} = require ('converteasy')
+```
+
 For use you just need pass three parameters to function:
     - Local = "pt-br"
     - Currency = "BRL"
