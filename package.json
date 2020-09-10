@@ -1,0 +1,20 @@
+{
+  "name": "converteasy",
+  "version": "1.0.0",
+  "description": "Project to easy convert currency values to local String",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gocoredev/convertEasy.git"
+  },
+  "keywords": ["convert", "easyConvert", "easy Echange Values"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gocoredev/convertEasy/issues"
+  },
+  "homepage": "https://github.com/gocoredev/convertEasy#readme"
+}
