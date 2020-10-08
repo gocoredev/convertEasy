@@ -1,10 +1,11 @@
-# ConvertEasy 1.0.0
+# ConvertEasy 1.0.4
 
-A Simple way to convert local currency, length, height and other metrics.
+A Simple way to convert local currency, length, height and other metrics. 
 
 # New Features!
 
   - Convert number format to currency local. 
+  - Now Can you use this library to generate unique Id numeric, string customized for your primaries Keys.
 ### Development
 
 Want to contribute? Great!
@@ -63,6 +64,22 @@ convertIsoToDate('2020-09-15T18:45:26.621Z')
 The return will be:
 ```js
 2020-9-15
+```
+New Methods:
+
+For Generate a numeric random ID with custom length:
+```js
+genNumId(length)
+```
+
+For generate a string unique ID with customized length:
+```js
+uniId (length) 
+```
+
+For generate a string unique ID complete:
+```js
+uniqueId ()
 ```
 
 

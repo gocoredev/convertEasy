@@ -14,7 +14,40 @@ function convertIsoToDate(isoString) {
     return date.getFullYear()+'-'+ (date.getMonth()+1) + '-'+date.getDate();
 }
 
+function genNumId(length) {
+
+    if (typeof length !== 'number')
+        return 'Invalid format'
+    
+    if (typeof length === 'number') {
+        const generatedID = ((Math.round(Date.now() + Math.random() + Math.random() * Date.now())).toString()).substring(0,length)
+
+        return generatedID
+    }
+}
+function uniId (length) {
+
+    var result = ''
+    var characters = 'abcdefghijklmnopqrstuvwxyz123456789'
+    var charLength = characters.length;
+
+    for (var i = 0; i < length; i++) {
+        result += characters.charAt(Math.floor(Math.random() * charLength));
+    }
+    return result;
+
+}
+
+function uniqueId () {
+
+    return (uniId(5) + '-' + uniId(5) + '-' + uniId(5) + '-' + uniId(5))
+
+}
+
 module.exports = {
     convertIsoToDate,
-    convertMoney
+    convertMoney,
+    genNumId,
+    uniId,
+    uniqueId
 }
